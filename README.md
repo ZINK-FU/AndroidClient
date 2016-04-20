@@ -12,9 +12,9 @@ requestParams.setRequestTool(RequestTool.connection);
 
 //config data
 requestParams.setUrl(url);
-requestParams.addHeader("", "");
-requestParams.addTextEntity("name", "ZINK");
-requestParams.addFileEntity("file1", file, "fileName");
+requestParams.addHeader("key", "value");
+requestParams.addTextEntity("key", "value");
+requestParams.addFileEntity("key", file, "fileName");
 
 //start request
 HttpRequest = new HttpRequest(requestParams, new BitmapResponseHandler(){
