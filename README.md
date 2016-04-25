@@ -17,7 +17,7 @@ requestParams.addTextEntity("key", "value");
 requestParams.addFileEntity("key", file, "fileName");
 
 //start request
-HttpRequest = new HttpRequest(requestParams, new BitmapResponseHandler(){
+HttpRequest request = new HttpRequest(requestParams, new BitmapResponseHandler(){
 	@Override
 	public void onFailure(HttpException exception){
 
@@ -43,6 +43,7 @@ HttpRequest = new HttpRequest(requestParams, new BitmapResponseHandler(){
 
 	}
 });
+request.execute();
 ```
 
 ##AndroidClient Class Diagram
